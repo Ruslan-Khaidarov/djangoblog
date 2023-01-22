@@ -1,2 +1,0 @@
-from myblog import settings.py
-settings.py
