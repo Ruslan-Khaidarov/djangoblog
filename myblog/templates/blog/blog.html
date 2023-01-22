@@ -9,12 +9,13 @@
 </head>
 
 <body>
-    {% for post in post_list:%}
-    {{post.title}}
-    {{post.description}}
+    {% for post in post_list%}
+    <h3>{{post.title}}</h3>
+    <p>{{post.description}}</p>
     {{post.autor}}
+    {%endfor%}
 
-    {%ennfor%}
+
 
 
 
