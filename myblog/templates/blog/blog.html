@@ -16,8 +16,8 @@
 
 			<div id="navigation">
 				<ul>
-					<li><a href="#" class="active">Главная</a></li>
-					<li><a href="#">Админ панель</a></li>
+					<li><a href="/" class="active">Главная</a></li>
+					<li><a href="/admin">Админ панель</a></li>
 
 				</ul>
 			</div>
@@ -28,30 +28,29 @@
 					<div class="projects">
 						<h3>Записи</h3>
 						{%for post in post_list %}
-						<div class="item">
+						< class="item">
 							<div class="image left">
 								<a href="#"><img src="{{post.img.url}}" width="185px" alt="" /></a>
 							</div>
 							<div class="text left">
-								<h4>{{post.title}}</h4>
+								<h4><a href="{{ post.id}}">{{post.title}}</a></h4>
 								<p>{{post.description}}</p>
 								<p>Автор:{{post.autor}} </p>
 							</div>
-							<div class="cl">&nbsp;</div>
-						</div>
-						{%endfor%}
+							<div class="cl"></div>
+							{%endfor%}
 					</div>
 				</div>
-
-				<div class="cl">&nbsp;</div>
 			</div>
-
-
+			<div class="cl"></div>
 		</div>
 
-		<div id="footer">
-			<p class="copy right">Copyright &copy; 2022 </p>
-		</div>
+
+	</div>
+
+	<div id="footer">
+		<p class="copy right">Copyright &copy; 2022 </p>
+	</div>
 	</div>
 </body>
 
